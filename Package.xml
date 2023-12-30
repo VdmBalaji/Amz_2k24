@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="End to End Test">
+	<listeners>
+		<listener class-name="Listeners.ListenHere"></listener>
+	</listeners>
+	
+  <test thread-count="2" name="Test_cases" >
+	  <parameter name="browser" value="chrome" > </parameter>
+    <classes>
+      <class name="Test_Cases.TC_Header"/>
+      <class name="Test_Cases.TC_MenuBar"/>
+      <class name="Test_Cases.TC_Product_Detail"/>
+      <class name="Test_Cases.TC_Footer"/>
+      <class name="Test_Cases.TC_Login"/>
+      <class name="Test_Cases.TC_CreateAccount"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

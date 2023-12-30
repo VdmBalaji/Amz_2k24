@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Failed suite [End to End Test]</th></tr>
+<tr><td><a href="#t0">Test_cases(failed)</a></td><td class="num">17</td><td class="num">0</td><td class="num">0</td><td class="num attn">8</td><td class="num">1,001,464</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Failed suite [End to End Test]</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_cases(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">Test_Cases.TC_Footer</td><td><a href="#m0">TC_006_Country</a></td><td rowspan="3">1703926107281</td><td rowspan="3">6294</td></tr><tr class="failedeven"><td><a href="#m1">TC_006_Country</a></td></tr><tr class="failedeven"><td><a href="#m2">TC_006_Country</a></td></tr><tr class="failedeven"><td><a href="#m3">TC_007_MoreonAmazon</a></td><td rowspan="4">1703926157406</td><td rowspan="4">26194</td></tr><tr class="failedeven"><td><a href="#m4">TC_007_MoreonAmazon</a></td></tr><tr class="failedeven"><td><a href="#m5">TC_007_MoreonAmazon</a></td></tr><tr class="failedeven"><td><a href="#m6">TC_007_MoreonAmazon</a></td></tr><tr class="failedodd"><td rowspan="1">Test_Cases.TC_Product_Detail</td><td><a href="#m7">TC_003_search_product</a></td><td rowspan="1">1703925470928</td><td rowspan="1">38740</td></tr><tr><th colspan="4">Test_cases(failed) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">Test_Cases.TC_Footer</td><td><a href="#m8">TC_004_Footer_Logo</a></td><td rowspan="1">1703925961905</td><td rowspan="1">10122</td></tr><tr class="passedeven"><td><a href="#m9">TC_006_Country</a></td><td rowspan="3">1703926027585</td><td rowspan="3">20224</td></tr><tr class="passedeven"><td><a href="#m10">TC_006_Country</a></td></tr><tr class="passedeven"><td><a href="#m11">TC_006_Country</a></td></tr><tr class="passedodd"><td rowspan="7">Test_Cases.TC_Header</td><td><a href="#m12">TC_005_Account_and_AllList</a></td><td rowspan="4">1703925731393</td><td rowspan="4">13907</td></tr><tr class="passedodd"><td><a href="#m13">TC_005_Account_and_AllList</a></td></tr><tr class="passedodd"><td><a href="#m14">TC_005_Account_and_AllList</a></td></tr><tr class="passedodd"><td><a href="#m15">TC_005_Account_and_AllList</a></td></tr><tr class="passedodd"><td><a href="#m16">TC_007_Select_a_Item_Dropdown</a></td><td rowspan="3">1703925932314</td><td rowspan="3">20446</td></tr><tr class="passedodd"><td><a href="#m17">TC_007_Select_a_Item_Dropdown</a></td></tr><tr class="passedodd"><td><a href="#m18">TC_007_Select_a_Item_Dropdown</a></td></tr><tr class="passedeven"><td rowspan="4">Test_Cases.TC_MenuBar</td><td><a href="#m19">TC_0011_EchoandAlexa_AlexaSmartHome</a></td><td rowspan="1">1703925264209</td><td rowspan="1">22504</td></tr><tr class="passedeven"><td><a href="#m20">TC_003_BestSeller</a></td><td rowspan="1">1703925296080</td><td rowspan="1">23599</td></tr><tr class="passedeven"><td><a href="#m21">TC_005_MoversAndShakers</a></td><td rowspan="1">1703925329063</td><td rowspan="1">45484</td></tr><tr class="passedeven"><td><a href="#m22">TC_006_AmazonMiniTV</a></td><td rowspan="1">1703925383651</td><td rowspan="1">61235</td></tr><tr class="passedodd"><td rowspan="2">Test_Cases.TC_Product_Detail</td><td><a href="#m23">TC_001</a></td><td rowspan="1">1703925455242</td><td rowspan="1">6079</td></tr><tr class="passedodd"><td><a href="#m24">TC_007_carousel</a></td><td rowspan="1">1703925522691</td><td rowspan="1">174887</td></tr></tbody>
+</table>
+<h2>Test_cases(failed)</h2><h3 id="m0">Test_Cases.TC_Footer#TC_006_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>United States of America</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [https://www.amazon.in/] but found [https://www.amazon.in/]
+	at Page_Object.Footer.country_list(Footer.java:209)
+	at Test_Cases.TC_Footer.TC_006_Country(TC_Footer.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test_Cases.TC_Footer#TC_006_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>88</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [https://www.amazon.in/] but found [https://www.amazon.in/]
+	at Page_Object.Footer.country_list(Footer.java:209)
+	at Test_Cases.TC_Footer.TC_006_Country(TC_Footer.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test_Cases.TC_Footer#TC_006_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sgfsfgsg</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [https://www.amazon.in/] but found [https://www.amazon.in/]
+	at Page_Object.Footer.country_list(Footer.java:209)
+	at Test_Cases.TC_Footer.TC_006_Country(TC_Footer.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Test_Cases.TC_Footer#TC_007_MoreonAmazon</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Audible</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [https://www.amazon.in/] but found [https://www.amazon.in/]
+	at Page_Object.Footer.MoreItems(Footer.java:241)
+	at Test_Cases.TC_Footer.TC_007_MoreonAmazon(TC_Footer.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Test_Cases.TC_Footer#TC_007_MoreonAmazon</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Amazon Prime Music</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [https://www.amazon.in/] but found [https://www.amazon.in/]
+	at Page_Object.Footer.MoreItems(Footer.java:241)
+	at Test_Cases.TC_Footer.TC_007_MoreonAmazon(TC_Footer.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Test_Cases.TC_Footer#TC_007_MoreonAmazon</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sgfsfgsg</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [https://www.amazon.in/] but found [https://www.amazon.in/]
+	at Page_Object.Footer.MoreItems(Footer.java:241)
+	at Test_Cases.TC_Footer.TC_007_MoreonAmazon(TC_Footer.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Test_Cases.TC_Footer#TC_007_MoreonAmazon</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>88</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: did not expect [https://www.amazon.in/] but found [https://www.amazon.in/]
+	at Page_Object.Footer.MoreItems(Footer.java:241)
+	at Test_Cases.TC_Footer.TC_007_MoreonAmazon(TC_Footer.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Test_Cases.TC_Product_Detail#TC_003_search_product</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45168070a23e7cdbb1052df99217ace3, actions {actions=[org.openqa.selenium.interactions.Sequence@20cdb152]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4183/devtool..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 45168070a23e7cdbb1052df99217ace3
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:395)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:165)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:322)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:185)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:185)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:322)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:203)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:198)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:322)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:313)
+	at org.openqa.selenium.json.Json.toJson(Json.java:43)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:256)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:120)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
+	at Utilities.Assist.move(Assist.java:40)
+	at Page_Object.Product_Detail.Search_a_product(Product_Detail.java:346)
+	at Test_Cases.TC_Product_Detail.TC_003_search_product(TC_Product_Detail.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:338)
+		at org.openqa.selenium.json.Json.toJson(Json.java:41)
+		... 39 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:391)
+	... 60 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;a-section s-range-input-container s-upper-bound&apos;]&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45168070a23e7cdbb1052df99217ace3, findElement {using=xpath, value=//div[@class=&apos;a-section s-range-input-container s-upper-bound&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4183/devtool..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 45168070a23e7cdbb1052df99217ace3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:275)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:224)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
+	... 65 more
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Test_Cases.TC_Footer#TC_004_Footer_Logo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Test_Cases.TC_Footer#TC_006_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Brazil</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Test_Cases.TC_Footer#TC_006_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Singapore</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Test_Cases.TC_Footer#TC_006_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Australia</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Test_Cases.TC_Header#TC_005_Account_and_AllList</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Baby Wishlist</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Test_Cases.TC_Header#TC_005_Account_and_AllList</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Your Wish List</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Test_Cases.TC_Header#TC_005_Account_and_AllList</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Create a Wish List</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">Test_Cases.TC_Header#TC_005_Account_and_AllList</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Your Seller Account</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">Test_Cases.TC_Header#TC_007_Select_a_Item_Dropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">Test_Cases.TC_Header#TC_007_Select_a_Item_Dropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">Test_Cases.TC_Header#TC_007_Select_a_Item_Dropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">Test_Cases.TC_MenuBar#TC_0011_EchoandAlexa_AlexaSmartHome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">Test_Cases.TC_MenuBar#TC_003_BestSeller</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">Test_Cases.TC_MenuBar#TC_005_MoversAndShakers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">Test_Cases.TC_MenuBar#TC_006_AmazonMiniTV</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">Test_Cases.TC_Product_Detail#TC_001</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">Test_Cases.TC_Product_Detail#TC_007_carousel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>MSI GF63 Thin, Intel Core i5-11260H, 40CM FHD 144Hz Gaming</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
