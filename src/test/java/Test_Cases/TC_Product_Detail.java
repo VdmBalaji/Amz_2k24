@@ -84,5 +84,13 @@ public class TC_Product_Detail extends BaseStart{
 		//run.pagenation();
 		run.pagenation_previous();
 	}
+	
+	@Test
+	public void TC_0010() throws NumberFormatException, InterruptedException
+	{
+		Product_Detail run=new Product_Detail(driver);
+		//run.pagenation();
+		run.pagenation_previous();
+	}
 
 }
