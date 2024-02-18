@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [End to End Test]]" guice-stage="DEVELOPMENT">
+<suite thread-count="1" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="Listeners.ListenHere"/>
   </listeners>
-  <test thread-count="5" name="Test_cases(failed)(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="1" parallel="methods" name="A RUN FROM CHROME(failed)">
+    <parameter name="browser" value="CHROME"/>
     <classes>
-      <class name="Test_Cases.TC_Product_Detail">
+      <class name="Test_Cases.TC_Login">
         <methods>
           <include name="quit"/>
-          <include name="TC_003_search_product"/>
+          <include name="TC_002_SignIn" invocation-numbers="0 1 2 3 4"/>
           <include name="Allbrowser"/>
         </methods>
-      </class> <!-- Test_Cases.TC_Product_Detail -->
-      <class name="Test_Cases.TC_Footer">
-        <methods>
-          <include name="quit"/>
-          <include name="TC_007_MoreonAmazon" invocation-numbers="1 2 3 5"/>
-          <include name="TC_006_Country" invocation-numbers="1 3 6"/>
-          <include name="Allbrowser"/>
-        </methods>
-      </class> <!-- Test_Cases.TC_Footer -->
+      </class> <!-- Test_Cases.TC_Login -->
     </classes>
-  </test> <!-- Test_cases(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [End to End Test]] -->
+  </test> <!-- A RUN FROM CHROME(failed) -->
+</suite> <!-- Failed suite [Suite] -->

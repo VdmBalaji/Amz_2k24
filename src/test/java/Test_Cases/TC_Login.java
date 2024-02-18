@@ -30,7 +30,7 @@ public class TC_Login extends BaseStart{
 	  @DataProvider (name = "AllData")
 	  public String[][] getdata()
 	  {
-	  String data[][] = {{"6382208219" , "1234amazon"},
+	  String data[][] = {{"1212" , "sdffdf"},
 			             {"s@w.w" , "1111"},
 			             {" " , " "},
 	                     {"skbalaji285@gmail.com" , "1234qwerty"},

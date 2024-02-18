@@ -12,12 +12,13 @@
 	  <parameter name="browser" value="CHROME"></parameter>
 	 <classes>
 		 
-		 <class name="Test_Cases.TC_CreateAccount">
+		 <class name="Test_Cases.TC_Login">
 		 <methods>
 			 
 			  <!--<include name="TC_001SigninPopup"> </include>-->
 			 
-			  <include name="TC_001_CreateAccount"> </include>
+			  <include name="TC_002_SignIn"> </include>
+			
 			 
 			 
 			 

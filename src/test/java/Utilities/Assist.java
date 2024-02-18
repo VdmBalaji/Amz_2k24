@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Set;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -24,7 +25,7 @@ public class Assist extends BaseStart {
 
 	public static void NormalWait() throws NumberFormatException, InterruptedException
 	{
-		Thread.sleep(6000);
+		Thread.sleep(3000);
 		
 	}
 	
@@ -132,5 +133,20 @@ public class Assist extends BaseStart {
 		return a;
 		
 	}
+	
+	public static void highlightElement(WebDriver driver, WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].setAttribute('style', 'background:red; border: 1px solid red;');", element);
+        
+     // List of few others colurs 
+        /* Honeydew: rgba(240, 255, 240, 0.5)
+         LightSteelBlue: rgba(176, 196, 222, 0.5)
+         Sky Blue: rgba(135, 206, 235, 0.5)
+          MediumVioletRed: rgba(199, 21, 133, 0.5)
+          HotPink: rgba(255, 105, 180, 0.5)
+          Tomato: rgba(255, 99, 71, 0.5)
+          DarkMagenta: rgba(139, 0, 139, 0.5)
+         */
+    }
 	
 }

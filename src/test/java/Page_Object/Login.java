@@ -61,7 +61,10 @@ public class Login {
 	public void selectlogin() throws NumberFormatException, InterruptedException {
 
 		Assist.move(signin);
+		Assist.highlightElement(driver, signin);
+		Assist.wait.NormalWait();
 		ListenHere.Create.log(Status.INFO, "Moved to Sign in");
+		Assist.highlightElement(driver, login);
 		Assist.wait.NormalWait();
 		login.click();
 		ListenHere.Create.log(Status.INFO, "Signin is selected");
@@ -70,6 +73,8 @@ public class Login {
 		System.out.println(value);
 		Assert.assertTrue(value);
 		System.out.println("executing");
+		Assist.highlightElement(driver, logo);
+		Assist.wait.NormalWait();
 		logo.click();
 
 	}
@@ -77,22 +82,30 @@ public class Login {
 	public void Signin(String user , String pass) throws NumberFormatException, InterruptedException {
 
 		Assist.move(signin);
+		Assist.highlightElement(driver, signin);
+		Assist.wait.NormalWait();
 		ListenHere.Create.log(Status.INFO, "Moved to Sign in");
+		Assist.highlightElement(driver, login);
 		Assist.wait.NormalWait();
 		login.click();
 		ListenHere.Create.log(Status.INFO, "Signin is selected");
-		Assist.wait.NormalWait();
+		
 
 		boolean value = logo.isDisplayed();
 
 		EmailorPhonenumber.isDisplayed();
+		
+		Assist.highlightElement(driver, EmailorPhonenumber);
+		Assist.wait.NormalWait();
 
 		EmailorPhonenumber.sendKeys(user);
 		
-		Assist.wait.NormalWait();
 
 		ListenHere.Create.log(Status.INFO, "Value is entered in emailormobilenumber field");
 
+		Assist.highlightElement(driver, proceed);
+		Assist.wait.NormalWait();
+		
 		proceed.click();
 
 		ListenHere.Create.log(Status.INFO, "Continue button clicked");
@@ -104,6 +117,9 @@ public class Login {
 			
 			if (password.isDisplayed())
 			{
+				Assist.highlightElement(driver, password);
+				Assist.wait.NormalWait();
+				
 				ListenHere.Create.log(Status.INFO, "password is entered");
 			}
 		} catch (Exception e) {
@@ -118,7 +134,11 @@ public class Login {
 			submit.click();
 			
 			if (submit.isDisplayed()) 
+			
 			{
+				Assist.highlightElement(driver, submit);
+				Assist.wait.NormalWait();
+				
 				ListenHere.Create.log(Status.INFO, "Submit is clicked");
 			} 
 		} catch (Exception e) {
