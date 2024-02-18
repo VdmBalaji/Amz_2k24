@@ -154,6 +154,7 @@ public class Login {
 			
 		if (Amazonhomelogo.isDisplayed())
 		{
+			Assist.highlightElement(driver, Amazonhomelogo);
 			ListenHere.Create.log(Status.INFO, "VALID DATA: Home page is displayed");
 			Assert.assertTrue(true);
 		} 
