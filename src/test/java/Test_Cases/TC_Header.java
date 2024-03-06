@@ -13,7 +13,7 @@ import Utilities.Data;
 public class TC_Header extends BaseStart {
 
 	
-	@Test
+	@Test  (groups = {"Regression"})
 	public void TC_001_Logo() throws NumberFormatException, InterruptedException
 	{
 		Header run=new Header(driver);
@@ -22,7 +22,7 @@ public class TC_Header extends BaseStart {
 	}
 	
 	
-	@Test (dataProvider="Categories")
+	@Test(dataProvider="Categories", groups = {"Regression"})
 	public void TC_002_Dropdown(String one) throws NumberFormatException, InterruptedException
 	{
 		
@@ -37,7 +37,7 @@ public class TC_Header extends BaseStart {
 		return Assist.Categoryinheader();
 	}
 	
-	@Test (dataProvider="AllLanguages")
+	@Test (dataProvider="AllLanguages" , groups = {"Sanity"})
 	public void TC_004_Languages(String lang) throws NumberFormatException, InterruptedException
 	{
 		
@@ -66,7 +66,7 @@ public class TC_Header extends BaseStart {
 		 
 	}
 	
-	@Test
+	@Test (groups = {"Sanity"})
 	public void TC_006_searchDropdown() throws NumberFormatException, InterruptedException
 	{
 		Header run=new Header(driver);
@@ -87,13 +87,20 @@ public class TC_Header extends BaseStart {
 		run.selectlocation_Pincode();
 	}
 	
-	@Test
+	@Test (groups = {"Regression"})
 	public void TC_008_Select_Location_Signin() throws NumberFormatException, InterruptedException
 	{
 		Header run=new Header(driver);
 		run.selectlocation_signin();
 	}
 	
+	
+	@Test (groups = {"Regression"})
+	public void TC_009_select_gift() throws NumberFormatException, InterruptedException  
+	{
+		Header run=new Header(driver);
+		run.select_gift();
+	}
 	
 	
 	

@@ -8,15 +8,22 @@
 	</listeners>
   
   <test name="Header">
-	  <parameter name="browser" value="firefox"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
+	  
+	  <groups>
+		  <run>
+			  <include name="Sanity"></include>
+		  </run>
+	  </groups>
+	  
 	  <classes>
 		  
 		  <class name="Test_Cases.TC_Header">
 			  
-			  <methods>
-				  <include name="TC_008_Select_Location_Signin"></include>
+			 <!--  <methods>
+				  <include name="TC_009_select_gift"></include>
 				  		  
-			  </methods>
+			  </methods>-->
         </class>
   
 	  </classes>

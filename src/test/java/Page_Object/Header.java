@@ -24,6 +24,7 @@ public class Header extends BaseStart{
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, Login.class);
 		
 	}
 
@@ -107,6 +108,11 @@ public class Header extends BaseStart{
 	@FindBy
     (xpath="//i[@aria-label='Amazon']")
 	WebElement logo_Signin;
+	
+	
+	@FindBy
+	(xpath = "//a[@href='/gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc'][text()='Gift Cards']")
+	public static WebElement gift ;
 	
 	
 	public void Amazonlogo() throws NumberFormatException, InterruptedException
@@ -318,6 +324,23 @@ public class Header extends BaseStart{
 		Assert.assertTrue(true);
 		
 		Assist.wait.NormalWait();
+		
+		
+	}
+	
+	public void select_gift() throws NumberFormatException, InterruptedException
+	{
+		
+		Assist.highlightElement(driver , gift);
+		Assist.NormalWait();
+		gift.click();
+		ListenHere.Create.log(Status.INFO, "Gift is selected");
+		Assist.NormalWait();
+		String pagename =Assist.title();
+		Assert.assertEquals("Gift Cards & Vouchers Online : Buy Gift Vouchers & E Gift Cards Online in India - Amazon.in", pagename);
+		ListenHere.Create.log(Status.INFO, "Gift is Verified");
+		ListenHere.Create.log(Status.INFO, "Page Title:" +pagename);
+		
 		
 		
 	}

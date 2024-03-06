@@ -27,8 +27,8 @@ public class ExtentReport extends TestListenerAdapter {
 	//D:\PathofEC\TATA_cliQ\ExtentReport
 	
 	String userdir = System.getProperty("user.dir");
-	String path = File.separator+"ExtentReport"+File.separator+ "Report " +date+".html";
-	//String path = File.separator+"ExtentReport"+File.separator+ "Report " +".html";
+	//String path = File.separator+"ExtentReport"+File.separator+ "Report " +date+".html";
+	String path = File.separator+"ExtentReport"+File.separator+ "Report " +".html";
 	
 	
 	File filename = new File(userdir +File.separator+ path);
