@@ -8,7 +8,7 @@ import Page_Object.Gifts;
 
 public class TC_Gifts extends BaseStart {
      
-	 @Test(groups = {"Regression"})
+	 @Test (priority = 1, groups = {"Regression"})
 	public void TC_001_List() throws NumberFormatException, InterruptedException
 	{
 		Gifts run = new Gifts(driver);

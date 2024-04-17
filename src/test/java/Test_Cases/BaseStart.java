@@ -29,7 +29,7 @@ import Utilities.Assist;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseStart {
+public  class BaseStart {
 
 	public static WebDriver driver;
 	

@@ -77,6 +77,7 @@ public class Product_Detail extends BaseStart{
 	
 	@FindBy
 	(xpath ="//img[@id='landingImage']")
+	
 	public static WebElement LandingImage;
 	
 	
@@ -564,6 +565,7 @@ public class Product_Detail extends BaseStart{
 		System.out.println("SIZE OF ITEMS:" +size);
 			int i=1;
 		do
+			
 		{
 			i++;
 		for (WebElement laptop: carouselItems)

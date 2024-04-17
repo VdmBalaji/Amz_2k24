@@ -25,7 +25,7 @@ public class Assist extends BaseStart {
 
 	public static void NormalWait() throws NumberFormatException, InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 	}
 	
@@ -149,4 +149,15 @@ public class Assist extends BaseStart {
          */
     }
 	
+	
+	public static String[][] ware()
+	{
+		String all_data [][] = {{"6382208219" , "asasas"} ,  {"35345" , "asasas"} , {" " , " "} ,{"6382208219" , " "}};
+		
+		
+		return all_data;
+		
+	  
+		
+	}
 }

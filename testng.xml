@@ -9,7 +9,7 @@
 	</listeners>
 	
   <test name="A RUN FROM CHROME">
-	  <parameter name="browser" value="CHROME"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
 	 <classes>
 		 
 		 <class name="Test_Cases.TC_Login">

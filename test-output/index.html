@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\New path\Amz_2k24\Gifts.xml</span>
+                    <span>D:\New path\Amz_2k24\logger.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_Cases.TC_Gifts" class="method navigator-link" hash-for-method="TC_003_items">TC_003_items</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_Cases.TC_logger" class="method navigator-link" hash-for-method="TC_002(35345, asasas)">TC_002(35345, asasas)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Cases.TC_logger" class="method navigator-link" hash-for-method="TC_002( ,  )">TC_002( ,  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Cases.TC_logger" class="method navigator-link" hash-for-method="TC_002(6382208219, asasas)">TC_002(6382208219, asasas)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_Cases.TC_logger" class="method navigator-link" hash-for-method="TC_002(6382208219,  )">TC_002(6382208219,  )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +136,39 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test_Cases.TC_Gifts</span>
+              <span class="class-name">Test_Cases.TC_logger</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_003_items">
-                  </a> <!-- TC_003_items -->
-                  <span class="method-name">TC_003_items</span>
+                  <a name="TC_002(35345, asasas)">
+                  </a> <!-- TC_002(35345, asasas) -->
+                  <span class="method-name">TC_002</span>
+                  <span class="parameters">(35345,asasas)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_002( ,  )">
+                  </a> <!-- TC_002( ,  ) -->
+                  <span class="method-name">TC_002</span>
+                  <span class="parameters">( , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_002(6382208219, asasas)">
+                  </a> <!-- TC_002(6382208219, asasas) -->
+                  <span class="method-name">TC_002</span>
+                  <span class="parameters">(6382208219,asasas)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_002(6382208219,  )">
+                  </a> <!-- TC_002(6382208219,  ) -->
+                  <span class="method-name">TC_002</span>
+                  <span class="parameters">(6382208219, )</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,28 +176,28 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\New path\Amz_2k24\Gifts.xml</span>
+            <span class="header-content">D:\New path\Amz_2k24\logger.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Listeners.ListenHere&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Always have to rmeber&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;log&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Smoke&quot;/&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
         &lt;exclude name=&quot;Regression&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test_Cases.TC_Gifts&quot;/&gt;
+      &lt;class name=&quot;Test_Cases.TC_logger&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Always have to rmeber --&gt;
+  &lt;/test&gt; &lt;!-- log --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,7 +209,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Always have to rmeber (1 class)</span>
+                <span class="test-name">log (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,10 +220,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Smoke</span>
+              <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">TC_003_items</span>
+                <span class="method-in-group-name">TC_002</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -203,16 +243,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_003_items')
-data.setCell(0, 2, 'Test_Cases.TC_Gifts')
-data.setCell(0, 3, 25942);
+data.setCell(0, 1, 'TC_002')
+data.setCell(0, 2, 'Test_Cases.TC_logger')
+data.setCell(0, 3, 24864);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_002')
+data.setCell(1, 2, 'Test_Cases.TC_logger')
+data.setCell(1, 3, 24835);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_002')
+data.setCell(2, 2, 'Test_Cases.TC_logger')
+data.setCell(2, 3, 8484);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_002')
+data.setCell(3, 2, 'Test_Cases.TC_logger')
+data.setCell(3, 3, 7657);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,15 +279,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Test_Cases.TC_Gifts</span>
+              <span class="ignored-class-name">Test_Cases.TC_logger</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC_001_List</span>
-                <br/>
-                <span class="ignored-method-name">TC_002_carousel</span>
+                <span class="ignored-method-name">TC_001</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -247,18 +297,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test_Cases.TC_Gifts</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Test_Cases.TC_logger</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Allbrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_003_items</span>
-                <span class="method-start">5438 ms</span>
+                <span class="method-name">TC_002(6382208219, asasas)</span>
+                <span class="method-start">7494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">31647 ms</span>
+                <span class="method-start">17578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Allbrowser(chrome)</span>
+                <span class="method-start">17969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_002(35345, asasas)</span>
+                <span class="method-start">24220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">49204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Allbrowser(chrome)</span>
+                <span class="method-start">49360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_002( ,  )</span>
+                <span class="method-start">56021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">81146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Allbrowser(chrome)</span>
+                <span class="method-start">81359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_002(6382208219,  )</span>
+                <span class="method-start">86013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">94441 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

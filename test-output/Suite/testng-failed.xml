@@ -4,21 +4,22 @@
   <listeners>
     <listener class-name="Listeners.ListenHere"/>
   </listeners>
-  <test thread-count="5" name="Header(failed)">
+  <test thread-count="5" name="log(failed)">
     <parameter name="browser" value="chrome"/>
     <groups>
       <run>
-        <include name="Sanity"/>
+        <include name="smoke"/>
+        <exclude name="Regression"/>
       </run>
     </groups>
     <classes>
-      <class name="Test_Cases.TC_Header">
+      <class name="Test_Cases.TC_logger">
         <methods>
           <include name="quit"/>
-          <include name="TC_004_Languages" invocation-numbers="0 5"/>
+          <include name="TC_002"/>
           <include name="Allbrowser"/>
         </methods>
-      </class> <!-- Test_Cases.TC_Header -->
+      </class> <!-- Test_Cases.TC_logger -->
     </classes>
-  </test> <!-- Header(failed) -->
+  </test> <!-- log(failed) -->
 </suite> <!-- Failed suite [Suite] -->

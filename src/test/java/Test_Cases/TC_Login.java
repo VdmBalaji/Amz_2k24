@@ -16,6 +16,7 @@ public class TC_Login extends BaseStart{
 		Login run=new Login(driver);
 		run.selectlogin();
 		
+		
 	}
 	
 	@Test (dataProvider ="AllData")
@@ -33,7 +34,7 @@ public class TC_Login extends BaseStart{
 	  String data[][] = {{"1212" , "sdffdf"},
 			             {"s@w.w" , "1111"},
 			             {" " , " "},
-	                     {"skbalaji285@gmail.com" , "1234qwerty"},
+	                     {"6382208219" , "1234qwerty"},
 	                     {"skbalaji285@gmail.com" , "333"} };
 	  return data;
 	  
