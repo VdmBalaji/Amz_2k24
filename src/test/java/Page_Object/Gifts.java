@@ -15,7 +15,7 @@ import Listeners.ListenHere;
 import Test_Cases.BaseStart;
 import Utilities.Assist;
 
-public class Gifts extends BaseStart {
+public class Gifts extends BaseStart{
 
 	public Gifts (WebDriver driver)
 	{
@@ -67,6 +67,7 @@ public class Gifts extends BaseStart {
 	
 	public void generic () throws NumberFormatException, InterruptedException
 	{
+		
 		Ham.click();
 		Assist.NormalWait();
 		Assist.move(prr);
@@ -87,6 +88,7 @@ public class Gifts extends BaseStart {
 		Assist.move(allgiftscards);
 		Assist.highlightElement(driver, allgiftscards);
 		allgiftscards.sendKeys(Keys.RETURN);
+	
 		
 		System.out.print("Size:" + all_list.size());
 		

@@ -23,7 +23,7 @@ public class TC_Gifts extends BaseStart {
 		run.carousel();
 	}
 	
-	 @Test(groups = {"Smoke"})
+	 @Test(groups = {"normal"})
 	public void TC_003_items() throws NumberFormatException, InterruptedException
 	{
 		Gifts run = new Gifts(driver);

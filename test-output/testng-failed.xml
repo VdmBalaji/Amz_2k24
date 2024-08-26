@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="1" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="Listeners.ListenHere"/>
   </listeners>
-  <test thread-count="5" name="log(failed)">
+  <test thread-count="1" parallel="methods" name="A RUN FROM CHROME(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="smoke"/>
-        <exclude name="Regression"/>
-      </run>
-    </groups>
     <classes>
-      <class name="Test_Cases.TC_logger">
+      <class name="Test_Cases.TC_Login">
         <methods>
           <include name="quit"/>
-          <include name="TC_002"/>
+          <include name="TC_002_SignIn" invocation-numbers="0 1 2 3 4"/>
           <include name="Allbrowser"/>
         </methods>
-      </class> <!-- Test_Cases.TC_logger -->
+      </class> <!-- Test_Cases.TC_Login -->
     </classes>
-  </test> <!-- log(failed) -->
+  </test> <!-- A RUN FROM CHROME(failed) -->
 </suite> <!-- Failed suite [Suite] -->
